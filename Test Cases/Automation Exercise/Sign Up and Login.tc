@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Sign Up and Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>59bafc92-1087-4285-8b5d-670be58f9dd9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3094e6b0-cd42-44d0-b5cc-6085cf79b3ab</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Email'</defaultValue>
+      <description></description>
+      <id>3094e6b0-cd42-44d0-b5cc-6085cf79b3ab</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

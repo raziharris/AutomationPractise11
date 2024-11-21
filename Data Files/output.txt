@@ -1,0 +1,7 @@
+<TestObjects>
+    <TestObject>
+        <Name>LoginButton</Name>
+        <Locator>XPATH</Locator>
+        <Value>//button[@id='login']</Value>
+    </TestObject>
+</TestObjects>
