@@ -14,29 +14,36 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import java.util.Random as Random
 
-String screenshotBasePath = "C:\\Katalon Studio\\ParaBank Testing\\Checkpoints\\Screenshot"
+// Initialize screenshot counter if not already done
+if (GlobalVariable.screenshotCounter == null) {
+    GlobalVariable.screenshotCounter = 1 // Start with 1
+}
 
-int SSC = 1
-
+// Open browser and navigate to the login page
 WebUI.openBrowser('https://automationexercise.com/login')
 
-String screenshotPath1 = screenshotBasePath + "_" + SSC + ".png"
+// Input email
 WebUI.sendKeys(findTestObject('Relogin/Keys_Email'), findTestData('New Test Data').getValue(1, 1))
+
+// Input password
 WebUI.sendKeys(findTestObject('Relogin/Keys_Password'), 'Testing123')
-WebUI.takeScreenshot(screenshotPath1)
 
-SSC++
+// Take a screenshot with a dynamically named file
+WebUI.takeScreenshot("C:\\Katalon Studio\\ParaBank Testing\\Checkpoints\\Screenshot_${GlobalVariable.screenshotCounter}.png")
+GlobalVariable.screenshotCounter++ // Increment counter
 
-String screenshotPath2 = screenshotBasePath + "_" + SSC + ".png"
+// Click login button
 WebUI.click(findTestObject('Relogin/Button_Login'))
-WebUI.takeScreenshot(screenshotPath2)
 
+// Take another screenshot with a dynamically named file
+WebUI.takeScreenshot("C:\\Katalon Studio\\ParaBank Testing\\Checkpoints\\Screenshot_${GlobalVariable.screenshotCounter}.png")
+GlobalVariable.screenshotCounter++ // Increment counter
 
+// Close the browser
 WebUI.closeBrowser()
-
 
 

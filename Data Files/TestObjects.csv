@@ -1,0 +1,4 @@
+Name,XPath,Description
+LoginButton,//button[@id='login'],Button for logging in
+SearchBox,//input[@name='search'],Search bar on the homepage
+SubmitButton,//button[@type='submit'],Submit button for forms

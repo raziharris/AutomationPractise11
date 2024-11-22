@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login</name>
+   <name>Checkout_Item_Flow</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>52bcd733-4d86-4573-9286-abf8c1ccdce4</testCaseGuid>
+   <testCaseGuid>63c8627d-ed27-4270-aa38-bfedf28d42d6</testCaseGuid>
 </TestCaseEntity>

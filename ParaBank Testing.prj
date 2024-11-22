@@ -4,8 +4,12 @@
    <name>ParaBank Testing</name>
    <tag></tag>
    <UUID>82792542-11e2-4117-b7a2-759264e6c330</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>9.7.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Katalon Studio\ParaBank Testing\ParaBank Testing.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
