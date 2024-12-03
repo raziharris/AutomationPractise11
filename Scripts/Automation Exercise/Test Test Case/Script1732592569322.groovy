@@ -15,30 +15,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-// Initialize screenshot counter if not already done
-if (GlobalVariable.screenshotCounter == null) {
-    GlobalVariable.screenshotCounter = 1 // Start with 1
-}
+WebUI.openBrowser('google.com')
 
-// Open browser and navigate to the login page
-WebUI.openBrowser('https://automationexercise.com/login')
+WebUI.sendKeys(findTestObject('Google/input_google'), 'Testing123')
 
-// Input email
-WebUI.sendKeys(findTestObject('Relogin/Keys_Email'), findTestData('New Test Data').getValue(1, 1))
+WebUI.click(findTestObject('Google/button_submit'))
 
-// Input password
-WebUI.sendKeys(findTestObject('Relogin/Keys_Password'), GlobalVariable.Password)
 
-// Take a screenshot with a dynamically named file
-
-(GlobalVariable.screenshotCounter)++ // Increment counter
-
-// Click login button
-WebUI.click(findTestObject('Relogin/Button_Login'))
-
-(GlobalVariable.screenshotCounter)++ // Increment counter
-
-// Close the browser
-WebUI.closeBrowser()
 

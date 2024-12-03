@@ -40,7 +40,7 @@ WebUI.maximizeWindow()
 
 WebUI.sendKeys(findTestObject('SignUp/SignUp-Name'), 'Name1')
 
- WebUI.sendKeys(findTestObject('SignUp/SignUp-Email'), randomNumber + 'Test@gmail.com')
+WebUI.sendKeys(findTestObject('SignUp/SignUp-Email'), randomNumber + 'Test@gmail.com')
 
 WebUI.click(findTestObject('SignUp/SignUp-Button'))
 

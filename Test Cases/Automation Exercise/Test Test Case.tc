@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Output - Notefile</name>
+   <name>Test Test Case</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>05d67245-acab-420f-8afb-96c9c1ff0013</testCaseGuid>
+   <testCaseGuid>e5b7b219-02cd-4196-be5e-1945ff0edc66</testCaseGuid>
 </TestCaseEntity>

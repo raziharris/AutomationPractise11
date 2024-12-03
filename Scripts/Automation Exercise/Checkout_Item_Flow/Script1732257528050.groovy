@@ -58,9 +58,13 @@ WebUI.click(findTestObject('Checkout_Flow/Click_View_Cart'))
 
 WebUI.click(findTestObject('Checkout_Flow/Click_Proceed_To_Checkout'))
 
+WebUI.scrollToElement(findTestObject('Checkout_Flow/Click_Place_Order'), 0)
+
 WebUI.click(findTestObject('Checkout_Flow/Click_Place_Order'))
 
 WebUI.scrollToElement(findTestObject('Checkout_Flow/Click_Pay_And_Confirm_Order'), 0)
 
 WebUI.click(findTestObject('Checkout_Flow/Click_Pay_And_Confirm_Order'))
+
+WebUI.closeBrowser()
 
